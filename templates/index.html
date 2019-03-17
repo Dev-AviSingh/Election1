@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<link rel = "stylesheet" href="{{ url_for('static', filename='index.css') }}" />
+	<meta charset = "utf-8" />
+	</head>
+
+	<body>
+		<div id = "mainbody">
+			<div id = "bodyhead">
+				Elections
+			</div>
+			<div id = "figure">
+				<div id = "candidatelist">
+					<div id = "headboy">
+						<div class="candtitle" style="left: 0%;">
+							<div style="margin-top: 3.1vw;">
+								Head Boy
+							</div>
+						</div>
+						<div class="candidate" style="left: 20%;" id = "box1" onclick = "setactive(this, 'box1')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand1.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand1-->Candidate 1<!--Cand1/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 40%;" id = "box2" onclick = "setactive(this, 'box2')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand2.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand2-->Candidate 2<!--Cand2/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 60%;" id = "box3" onclick = "setactive(this, 'box3')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand3.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand3-->Candidate 3<!--Cand3/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 80%;" id = "box4" onclick = "setactive(this, 'box4')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand4.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand4-->Candidate 4<!--Cand4/-->
+							</div>
+						</div>
+					</div>
+					<div id = "headgirl">
+						<div class="candtitle" style="left: 0%;">
+							<div style="margin-top: 3.1vw;">
+								Head Girl
+							</div>
+						</div>
+						<div class="candidate" style="left: 20%;" id = "box5" onclick = "setactive(this, 'box5')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand5.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand5-->Candidate 5<!--Cand5/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 40%;" id = "box6"  onclick = "setactive(this, 'box6')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand6.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand6-->Candidate 6<!--Cand6/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 60%;" id = "box7"  onclick = "setactive(this, 'box7')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand7.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand7-->Candidate 7<!--Cand7/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 80%;" id = "box8"  onclick = "setactive(this, 'box8')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand8.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand8-->Candidate 8<!--Cand8/-->
+							</div>
+						</div>
+					</div>
+					<div id = "sportscaptain">
+						<div class="candtitle" style="left: 0%;">
+							<div style="margin-top: 1.5vw;">
+								Sports Captain
+							</div>
+						</div>
+						<div class="candidate" style="left: 20%;" id = "box9"  onclick = "setactive(this, 'box9')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand9.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand9-->Candidate 9<!--Cand9/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 40%;" id = "box10"  onclick = "setactive(this, 'box10')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand10.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand10-->Candidate 10<!--Cand10/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 60%;" id = "box11"  onclick = "setactive(this, 'box11')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand11.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand11-->Candidate 11<!--Cand11/-->
+							</div>
+						</div>
+						<div class="candidate" style="left: 80%;" id = "box12"  onclick = "setactive(this, 'box12')">
+							<div class = "candidatelogo">
+								<img style = "max-height: 100%;max-width: 100%; left: 25%; width: 50%; height: 80%; top: 10%;position: absolute;" src="{{ url_for('static', filename='Cand12.jpg') }}" />
+							</div>
+							<div class = "candidatename">
+								<!--Cand12-->Candidate 12<!--Cand12/-->
+							</div>
+						</div>
+					</div>
+					<div id = "submit" onclick = "submit()">
+						SUBMIT
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		
+		<div id = "finale" onclick="submittoserver()">
+			Submit Results
+		</div>
+	</body>
+
+	<script src = "{{ url_for('static', filename='index.js') }}"></script>
+</html>
